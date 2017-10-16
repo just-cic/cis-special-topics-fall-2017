@@ -1,0 +1,119 @@
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <!--<img src="http://www.just.edu.jo/Style%20Library/JUST2016/images/JUSTLogo.png" width="50" />-->
+    <a [routerLink]="['/']" class="navbar-brand" style="font-size: 24px;">TECHNO</a>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+        <li class="active">
+            <a href="javascript:;">الشؤون القانونية والعلاقات العامة</a>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">البيانات الرئيسية&nbsp;<span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">
+                    قضايا المحاكم
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'manage-courts-lookup']">قائمة المحاكم</a>
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'manage-case-parties-lookup']">قائمة أطراف القضية</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li class="dropdown-header">
+                    حجز المدرجات
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'manage-case-parties-lookup']">قائمة المدرجات</a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">قضايا المحاكم&nbsp;<span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">
+                    القضايا
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'create-court-case']">إدخال قضية جديدة</a>
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'change-court-case']">تعديل معلومات قضية</a>
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'display-court-case']">عرض تفاصيل قضية</a>
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'search-for-court-cases']">البحث عن قضية</a>
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'add-attachment-to-court-case']">إضافة مرفقات إلى قضية</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li class="dropdown-header">
+                    جلسات المحكمة
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'create-court-sitting']">إضافة جلسة محكمة</a>
+                </li>
+                <li>
+                    <a [routerLink]="['legal-affairs', 'add-attachment-to-court-sitting']">إضافة مرفقات إلى جلسة محكمة</a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">حجز المدرجات&nbsp;<span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">
+                    التقارير
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'available-halls-report']">تقرير بالمدرجات المحجوزة</a>
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'booked-halls-report']">تقرير بالمدرجات المتوفرة</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li class="dropdown-header">
+                    طلبات حجز المدرجات
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'cancel-hall-booking']">إلغاء حجز مدرج</a>
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'create-hall-booking']">إدخال طلب حجز مدرج</a>
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'change-hall-booking']">تعديل طلب حجز مدرج</a>
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'display-hall-booking']">عرض تفاصيل حجز مدرج</a>
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'approve-hall-booking']">إعتماد طلب حجز مدرج</a>
+                </li>
+                <li>
+                    <a [routerLink]="['public-relations', 'display-my-bookings']">عرض طلبات الحجز الخاصة بي</a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">معلومات الحساب&nbsp;<span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="javascript:;" (click)="logout()"><span class="fa fa-sign-out"></span> خروج</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
