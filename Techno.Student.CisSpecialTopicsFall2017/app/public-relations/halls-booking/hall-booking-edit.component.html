@@ -1,1 +1,95 @@
-﻿
+﻿<h3 style="color:Tomato">
+    Joud Khuzaie
+</h3>
+
+<h1 style="color:DodgerBlue">
+    Blooking halls
+</h1>
+<br />
+<br />
+<!-- This page allows the user to request a reservation for hall .	any employee
+
+ /****************************************************************/
+-User's Department
+-Event name, type, and Description
+-Reservation date and time
+-Guests (their names and organizations)
+-requested Hall
+-Notes
+-->
+<div class="form-group col-sm-8">
+    <form class="form-group col-sm-8 ">
+        <label for="inputsm" class="control-label col-sm-4 "> User Department : </label>
+        <input type="text" value="" maxlength="30" onblur="blur" id="dep" class="form-control-sm" placeholder="User Department" />
+        <br />
+        <br />
+        <label for="evn" class="control-label col-sm-4 "> Event name : </label>
+        <input type="text" value="" maxlength="30" onblur="blur" id="evn" class="form-control-sm" placeholder="Event name " />
+        <br />
+        <br />
+        <label for="evty" class="control-label col-sm-4 ">Event type : </label>
+        <select class="form-control-sm" id="evty">
+            <option> Scientific </option>
+            <option> Entertaining</option>
+            <option> Literary</option>
+            
+        </select>
+        <br />
+        <br />
+        <label for="des" class="control-label col-sm-4 "> Event Description :</label>
+        <input type="text" maxlength="30" onblur="blur" id="des" class="form-control-sm" placeholder="Event description" />
+        <br />
+        <br />
+
+        <label for="desa" class="control-label col-sm-4 ">Reservation Date </label>
+        <input type="Date" maxlength="30" onblur="blur" id="desa" class="form-control-sm" placeholder="DD\MM\YYYY" />
+        <br />
+        <br />
+
+        <label for="desa" class="control-label col-sm-4 ">Reservation Time </label>
+        <input type="time" maxlength="30" onblur="blur" id="desa" class="form-control-sm" placeholder="HH:MN" />
+
+        <label for="desat" class="control-label col-sm-4 "> - </label>
+        <input type="time" maxlength="30" onblur="blur" id="desat" class="form-control-sm" placeholder="HH:MN" />
+        <br />
+        <br />
+      
+        <label for="gn" class="control-label col-sm-4 "> Guest Name : </label>
+        <input type="text" maxlength="30" onblur="blur" id="gn" class="form-control-sm" placeholder="Guest Name" />
+
+        <br />
+        <br />
+        <label for="org" class="control-label col-sm-4 ">Guest Organization : </label>
+        <input type="text" maxlength="30" onblur="blur" id="org" class="form-control-sm" placeholder="Organization" />
+
+        <br />
+        <br />
+        <label for="rh" class="control-label col-sm-4 "> Requested Hall : </label>
+        <input type="text" maxlength="30" onblur="blur" id="rh" class="form-control-sm" placeholder="requested Hall" />
+        <br />
+        <br />
+
+        <label for="n" class="control-label col-sm-4 "> Notes : </label>
+        <input type="text" onblur="blur" id="n" class="form-control input-lg" placeholder="Notes" />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <button type="submit" class="btn btn-success">Submit</button>
+
+
+        <button type="submit" class="btn btn-success">Update</button>
+    </form>
+</div>
+<br />
+
+
+<!-- This page allows the user to change a reservation	Any employee
+
+-->
